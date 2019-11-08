@@ -1,9 +1,9 @@
 // Dependencies
-const path = require("path");
+let path = require("path");
 
 // HTML routing
 module.exports = function(app) {
-    app.get("/tables", function(request, response) {
+        app.get("/tables", function(request, response) {
         response.sendFile(path.join(__dirname, "../public/tables.html"));
     });
 
